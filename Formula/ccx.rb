@@ -5,21 +5,21 @@
 class Ccx < Formula
   desc "Zero-config Claude Pro/Max plan credit-limit window tracker"
   homepage "https://github.com/seosd97/cc-token-exposer"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/seosd97/cc-token-exposer/releases/download/v0.2.0/ccx_darwin_amd64.tar.gz"
-      sha256 "1b58b69dc4705a828fd51bc84b29d82e3213c840ff7135d05752e8060e3fb914"
+      url "https://github.com/seosd97/cc-token-exposer/releases/download/v0.3.0/ccx_darwin_amd64.tar.gz"
+      sha256 "e36d4c9b279c51400ca996f6852bdee8adbf30cd8501e9826f13ccf71ab1b7f8"
 
       define_method(:install) do
         bin.install "ccx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/seosd97/cc-token-exposer/releases/download/v0.2.0/ccx_darwin_arm64.tar.gz"
-      sha256 "261f3d677cc0ab144cc9789a58bcf037ddb0b4d15e0eb8c1e8ac0944b3651efe"
+      url "https://github.com/seosd97/cc-token-exposer/releases/download/v0.3.0/ccx_darwin_arm64.tar.gz"
+      sha256 "3e929296eb6aef6b62d35c9653ba559e8480e02887710b712abc727f4921ef28"
 
       define_method(:install) do
         bin.install "ccx"
@@ -29,15 +29,15 @@ class Ccx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/seosd97/cc-token-exposer/releases/download/v0.2.0/ccx_linux_amd64.tar.gz"
-      sha256 "4d1624521b174cd5cee02e6499db1986a61cf5f53027038168719d1ffa2b82f6"
+      url "https://github.com/seosd97/cc-token-exposer/releases/download/v0.3.0/ccx_linux_amd64.tar.gz"
+      sha256 "b9bdd25f41e58dc941a0879414c1fa93fccaafd548b75e94fe9061f87791e7e5"
       define_method(:install) do
         bin.install "ccx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/seosd97/cc-token-exposer/releases/download/v0.2.0/ccx_linux_arm64.tar.gz"
-      sha256 "085c4d66e68c72b9f6a085b4139f31806b601716c7ca61b1d935f5ac99789423"
+      url "https://github.com/seosd97/cc-token-exposer/releases/download/v0.3.0/ccx_linux_arm64.tar.gz"
+      sha256 "a180eb3cfc6a59943f51ae29db584ebf9715b59b7e6f177b62d24f94e8b682a2"
       define_method(:install) do
         bin.install "ccx"
       end
